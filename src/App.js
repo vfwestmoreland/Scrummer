@@ -1,29 +1,28 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom';
-import { SignUp } from './components/signin/SignUp';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { SignIn } from './components/signin/SignIn';
-import { Account } from './components/accounts/Accounts';
-import { ProtectedRoute } from './components/protectedroutes/ProtectedRoute';
-import { AuthContextProvider } from './context/AuthContext';
-
- 
+import { SignUp } from './components/signin/SignUp';
+import { LoginProfile } from './components/profile/LoginProfile';
+import { ScrumApp } from './components/main/ScrumApp';
+import { UpdateProfile } from './components/profile/UpdateProfile';
+import { CustomMeeting } from './components/teammanager/CustomMeeting';
+import { ManageUsers } from './components/users/ManageUsers';
+import { CreateTeams } from './components/teams/CreateTeams';
 
 
 export const App = () => {
   return (
-      <div>
-          <h1 className='text-center text-3xl font-bold'>
-              SCRUMMER
-          </h1>
-            <AuthContextProvider>
-                    <Routes>
-                            <Route path='/' element={<SignIn />} />
-                            <Route path='/signup' element={<SignUp />} />
-                            <Route path='/account' element={<ProtectedRoute><Account /></ProtectedRoute>} />
-                    </Routes>
-            </AuthContextProvider>
-      </div>
-  );
-}
-
-
+      <>
+        <Routes>
+            <Route path='/' element={ <SignIn /> } />
+            <Route path='/signup' element={<SignUp /> } />
+            <Route path='/loginprofile' element={<LoginProfile /> } />
+            <Route path='/scrumapp/' element={<ScrumApp />} />
+            <Route path='/scrumapp/profile' element={<UpdateProfile />} />
+            <Route path='/scrumapp/meetings' element={<CustomMeeting />} />
+            <Route path='/scrumapp/admin' element={<ManageUsers />} />
+            <Route path='/scrumapp/teams' element={<CreateTeams />} />
+        </Routes>
+      </>
+  )
+};

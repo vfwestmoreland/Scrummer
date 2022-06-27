@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
+import { Card, Button, Form } from 'react-bootstrap'
 
 export const SignIn = () => {
     const [email, setEmail] = useState('');
@@ -14,31 +15,31 @@ export const SignIn = () => {
         setError('')
         try {
             await signIn(email, password)
-            navigate('/account')
+            navigate('/scrumapp')
           } catch (e) {
-            setError(e.message)
-            console.log(e.message)
+            setError(error.mmessage)
+            alert('Please Check Email or Password')
           }
       
     };
 
     return (
-    <div className='max-w-[700px] mx-auto my-16 p-4'>
-        <h1 className='text-2xl font-bold py-2'>Sign Into Account</h1>
-            <form onSubmit={handleSubmit}>
-                <div className='flex flex-col py-2'>
-                    <label className='py-2 font-medium'>Email Address</label>
-                    <input onChange={(e) => setEmail(e.target.value)} className='border p-3' type='email' />
-                </div>
-                <div className='flex flex-col py-2'>
-                    <label className='py-2 font-medium'>Password</label>
-                    <input onChange= {(e) => setPassword(e.target.value)} className='border p-3' type='password' />
-                </div>
-                    <button className='border border-blue-500 bg-blue-600 hover:bg-blue-500 w-full p-4 my-2 text-white'>Sign In</button>
-            </form>
-            <div>
-                <p className='py-2'>Already have an account?   <Link to='/signup' className='underline'>Sign Up</Link></p>
-            </div>
-    </div>
+        <Card className='text-center' style={{ width: '35%', marginTop: '10rem', marginLeft: 'auto', marginRight: 'auto'}} >
+            <Card.Header style={{ backgroundColor: 'lightgray'}}>Sign Into Account</Card.Header>
+                <Card.Body>
+                    <Form>
+                        <Form.Group className='mb-3' controlId='formBasicEmail'>
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control onChange={(e) => setEmail(e.target.value)} type='email' placeholder='Enter email' />
+                        </Form.Group>
+                        <Form.Group className='mb-3' controlId='formBasicPassword'>
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control onChange= {(e) => setPassword(e.target.value)} type='password' placeholder='Password' />
+                        </Form.Group>
+                            <Button onClick={handleSubmit} variant='outline-primary' type='submit'>Submit</Button>{''}
+                    </Form>
+                </Card.Body>
+            <Card.Footer style={{ backgroundColor: 'lightgray'}} className='text-muted'>Don't Have An Account <Link to='/signup'>Sign Up</Link></Card.Footer>
+        </Card>
     )
 };
