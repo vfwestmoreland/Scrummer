@@ -1,0 +1,170 @@
+{
+  "customMeetings": [
+    {
+      "userId": "5SxhTFyMnMOQ8VIr3Hc3WPAEDcj1",
+      "meetingName": "Bee TEst",
+      "teammates": [
+        "Wes",
+        "Mom",
+        "Amy"
+      ],
+      "id": 2
+    },
+    {
+      "userId": "5SxhTFyMnMOQ8VIr3Hc3WPAEDcj1",
+      "meetingName": "Wes",
+      "teammates": [
+        "Wes",
+        "Logan",
+        "Mom",
+        "Andrew",
+        "Amy"
+      ],
+      "id": 3
+    },
+    {
+      "userId": "GwyaYQSpIthKUElQr2w02qmue0q1",
+      "meetingName": "Super Happy Fun Time",
+      "teammates": [
+        "Jeff",
+        "Lib",
+        "Grier",
+        "Tom",
+        "Clay",
+        "Hooks"
+      ],
+      "id": 5
+    },
+    {
+      "userId": "GwyaYQSpIthKUElQr2w02qmue0q1",
+      "meetingName": "Not So Happy Fun Time",
+      "teammates": [
+        "Jeff",
+        "Kendall",
+        "Lib",
+        "Willow",
+        "Shane",
+        "Eric",
+        "Wes"
+      ],
+      "id": 6
+    },
+    {
+      "userId": "GwyaYQSpIthKUElQr2w02qmue0q1",
+      "meetingName": "Happy Fiesta",
+      "teammates": [
+        "Coop",
+        "Shane",
+        "Clay",
+        "Tom"
+      ],
+      "id": 7
+    },
+    {
+      "userId": "IakjwttA2GbJQhCEKjxjwWWnDZ92",
+      "meetingName": "Sales",
+      "teammates": [
+        "Jeff",
+        "Willow",
+        "Eric",
+        "Derek"
+      ],
+      "id": 9
+    },
+    {
+      "userId": "IakjwttA2GbJQhCEKjxjwWWnDZ92",
+      "meetingName": "Training",
+      "teammates": [
+        "Jesse",
+        "Clay",
+        "Wes",
+        "James",
+        "Addison",
+        "Tim"
+      ],
+      "id": 10
+    },
+    {
+      "userId": "IakjwttA2GbJQhCEKjxjwWWnDZ92",
+      "meetingName": "Executive",
+      "teammates": [
+        "Lib",
+        "Adam"
+      ],
+      "id": 11
+    },
+    {
+      "userId": "IakjwttA2GbJQhCEKjxjwWWnDZ92",
+      "meetingName": "Support",
+      "teammates": [
+        "Grier",
+        "Hooks",
+        "Shane"
+      ],
+      "id": 12
+    },
+    {
+      "userId": "IakjwttA2GbJQhCEKjxjwWWnDZ92",
+      "meetingName": "Finance",
+      "teammates": [
+        "Tom",
+        "Tricia",
+        "Ames"
+      ],
+      "id": 13
+    },
+    {
+      "userId": "IakjwttA2GbJQhCEKjxjwWWnDZ92",
+      "meetingName": "Development",
+      "teammates": [
+        "Kendall",
+        "Ramon",
+        "Coop",
+        "Justin",
+        "James"
+      ],
+      "id": 14
+    },
+    {
+      "userId": "wPrdqwwFfyYuMGNAhghQp7voZIW2",
+      "meetingName": "Jeff, Lib, Lorri",
+      "teammates": [
+        "Jeff",
+        "Kendall",
+        "Lib"
+      ],
+      "id": 16
+    },
+    {
+      "userId": "juH47EhgPoPqAoUAuatT50nz6JH3",
+      "meetingName": "Wes's Meeting",
+      "teammates": [
+        "Willow",
+        "Grier",
+        "Tom"
+      ],
+      "id": 17
+    },
+    {
+      "userId": "IakjwttA2GbJQhCEKjxjwWWnDZ92",
+      "meetingName": "Dev + Jame",
+      "teammates": [
+        "Jeff",
+        "Kendall",
+        "Lib",
+        "Willow",
+        "Jesse",
+        "Grier",
+        "Ramon",
+        "Tom",
+        "Clay",
+        "Kendall",
+        "Ramon",
+        "Coop",
+        "Justin",
+        "James"
+      ],
+      "id": 18
+    }
+  ]
+}
